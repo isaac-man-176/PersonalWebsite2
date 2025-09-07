@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: black;
+  top:0;
+  color: white;
+  background-color: rgb(0, 12, 57);
+}
+
+header{
+  display: flex;
+  justify-content: left;
+  padding-left: 20%;
+}
+
+.navBarContainer{
+  padding: 20px 20%;
+  display: flex;          /* horizontal layout */
+  flex-direction: row;    /* default, can omit */
+  align-items: center; 
+  position:fixed;
+  width:100%;
+  left:0;
+}
+
+nav{
+  background-color: rgb(0, 12, 57, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerButton{
+  top: 0;
+  padding-right: 35px;
+  color: rgb(230,230,230);
+  background-color:transparent;
+  border: 5px solid transparent;
+  text-align: center; 
+  display: inline-block;
+  transition: transform 0.2s, border 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.headerButton:hover,.sendButton:hover{
+  text-shadow: 0 4px 14px white;
+  color: rgb(255,255,255);
+  transform: scale(1.11);   
+}
+
+body{
+  padding-top: 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;       /* visible border */
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent input */
+  color: white;                  /* text color */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.topForm{
+  display: flex;
+  width: 100%;
+  padding-block: 10px;
+  gap: 10px;
+}
+
+.sendButton{
+  border: 1px solid #ccc;  
+  border-radius: 5px;
+}
