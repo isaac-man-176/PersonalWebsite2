@@ -21,6 +21,7 @@ header{
   position:fixed;
   width:100%;
   left:0;
+  z-index: 1000;
 }
 
 nav{
@@ -49,10 +50,13 @@ a {
   transform: scale(1.11);   
 }
 
-body{
+.pagePadding{
   padding-top: 80px;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 25%;
+  padding-right: 25%;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
 }
 
 .contactForm input,
@@ -148,4 +152,93 @@ img{
 
 .linkedinLogo:hover,.githubLogo:hover{
   transform: scale(1.05);
+}
+
+.gallerySection{
+  gap: 10px;
+  padding: 10px;
+  background-color: transparent;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galleryBox{
+  border-radius: 15px;
+  background-color: rgb(24, 24, 72);
+  margin: 5px;
+  display:flex;
+  flex-direction: column;     
+}
+
+.galleryImages{
+  width: 100%;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 15px;     
+  display: block;
+}
+
+.galleryBox > p{
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 13px;
+}
+
+.galleryImages:hover{
+  transform: scale(1.1);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.imageBox{
+  height: 375px;
+  overflow: hidden;
+  border-radius: 15px;
+  width:450px;
+}
+
+.galleryPage{
+  padding-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryPage > .bigHeader{
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  gap: 20%;
+  margin: 10px;
+  position: sticky;
+  bottom: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* takes remaining space */
 }

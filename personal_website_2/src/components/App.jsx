@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Hobbies from "./Hobbies.jsx";
+import Gallery from "./Gallery.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx"
 import "/src/index.css"
 
 export default function App() {
@@ -17,15 +18,16 @@ export default function App() {
       <header className="navBar">
         <nav className="navBarContainer">
             <a href="#about" className = "headerButton" onClick={(e) => handleNavClick(e, "about")}>About</a>
-            <a href="#home" className = "headerButton" onClick={(e) => handleNavClick(e, "hobbies")}>Hobbies</a>
+            <a href="#gallery" className = "headerButton" onClick={(e) => handleNavClick(e, "gallery")}>Gallery</a>
             <a href="#contact" className = "headerButton" onClick={(e) => handleNavClick(e, "contact")}>Contact</a>
         </nav>
       </header>
 
       <main>
         {page === "about" && <About />}
-        {page === "hobbies" && <Hobbies />}
+        {page === "gallery" && <Gallery />}
         {page === "contact" && <Contact />}
+        <Footer />
       </main>
     </>
   );

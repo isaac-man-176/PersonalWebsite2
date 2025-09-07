@@ -6,7 +6,7 @@ export default function About() {
     link.click();
   }
   return (
-    <section>
+    <section className="pagePadding">
         <br></br><br></br>
       <h1 className = "bigHeader">Hi, I'm Isaac!</h1>
       <br></br>

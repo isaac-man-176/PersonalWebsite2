@@ -1,7 +1,10 @@
-export default function App(){
+import "/src/index.css"
+
+export default function Footer(){
   return (
-    <>
-      <h1>hello from footer</h1>
-    </>
+    <div className="footer">
+      <p>© 2025 Isaac Man | All rights reserved.</p>
+      <p>Built with React</p>
+    </div>
   )
 }
