@@ -21,7 +21,7 @@ export default function About() {
         If you’re interested in connecting with me or if you have any further inquiries, feel free to reach out through LinkedIn or email!
       </p>
       <div className = "imageSection">
-      <img src="/src/images/IsaacManProfilePic.jpeg" alt = "Isaac Man"></img>
+      <img src="src\images\IsaacManProfilePic.jpeg" alt = "Isaac Man"></img>
       <div className = "smallButtons">
       <a href="https://github.com/isaac-man-176" target="_blank" rel="noopener noreferrer"><img src="/src/images/GithubLogo.png" className = "githubLogo"></img></a>
       <a href="https://www.linkedin.com/in/isaac-man-865621305/" target="_blank" rel="noopener noreferrer"><img src="/src/images/LinkedinLogo.png" className = "linkedinLogo"></img></a>
